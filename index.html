@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculadora">
+        <h1>Calcule seu IMC</h1>
+        <input
+          id="altura"
+          type="number"
+          name="altura"
+          placeholder="Digite sua altura em metros"
+        />
+        <input
+          id="peso"
+          type="number"
+          name="altura"
+          placeholder="Digite seu peso em Kg"
+        />
+        <p id="descricao">
+          Com o sistema métrico, a fórmula do IMC é o peso em quilogramas
+          dividido pela altura em metros ao quadrado.
+        </p>
+        <button id="calcBtn" class="btn">Calcular IMC</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
