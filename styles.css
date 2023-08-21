@@ -41,11 +41,15 @@
   border-radius: 20px;
   outline: none;
   color: #fafafa;
+  transition: 0.3s;
 }
 .container .calculadora input::placeholder {
   color: #fafafa;
   font-weight: 400;
   font-size: 14px;
+}
+.container .calculadora input:hover {
+  background: #00000020;
 }
 
 .container .calculadora p {
@@ -69,4 +73,44 @@
   border-radius: 20px;
   cursor: pointer;
   color: #fafafa;
+  transition: 0.3s;
+}
+
+.container .calculadora .btn:hover {
+  transform: scale(1.1);
+}
+
+.container .calculadora .btn:active {
+  transform: scale(0.95);
+}
+.container .alert {
+  width: 300px;
+  height: 100px;
+  background-color: #00000042;
+  color: #fafafa;
+  position: absolute;
+  border: 2px solid #fafafa;
+  top: 5%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  padding: 20px 10px;
+  visibility: hidden;
+  animation: 2s animation infinite;
+}
+.container .alert h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+@keyframes animation {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
